@@ -1,0 +1,71 @@
+.inter-regular-footer {
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%; /* 17.5px */
+}
+
+.inter-regular {
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19.2px; /* 120% */
+}
+
+.inter-regular-weird {
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21.6px; /* 135% */
+}
+
+.inter-regular-bigger {
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px; /* 135% */
+}
+
+.inter-bold {
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 135%; /* 21.6px */
+}
+
+.eb-garamond-regular {
+    font-family: EB Garamond;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 135%; /* 29.7px */
+}
+
+.eb-garamond-medium {
+    font-family: "EB Garamond";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 115%; /* 32.2px */
+}
+
+.eb-garamond-huge {
+    font-family: "EB Garamond";
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 72px */
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.text-align-right {
+    text-align: right;
+}
