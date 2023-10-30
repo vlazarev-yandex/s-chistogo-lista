@@ -1,0 +1,165 @@
+body {
+    margin: 0;
+    background-color: var(--black-bg, #131313);
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote {
+    margin: 0;
+    padding: 0;
+}
+
+.border {
+    border: 1px dashed gray;
+}
+
+.theme_dark {
+    background-color: var(--black-bg, #131313);
+    color: var(--text-light, #F5F5F5);
+}
+
+.theme_bright {
+    background: var(--yellow-bg, #FEE42A);
+    color: var(--black-bg, #131313);
+}
+
+.main-content {
+    width: 360px;
+    height: 4160px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin: auto;
+}
+
+.content-section {
+    width: 360px;
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+
+.header {
+    width: 360px;
+    height: 132px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.header__logo {
+    float: left;
+    height: 100%; 
+}
+
+.header__menu {
+    float: right;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.header__menu-item {
+    text-decoration: underline;
+}
+
+.cover {
+    margin: 30px 0;
+    padding: 0;
+    background-image: url("../img/Ellipse\ 2.svg"), url(../img/Polygon\ 1.svg);
+    background-repeat: no-repeat;
+    background-position: 0% 100%, 100% 0;
+}
+
+.cover-title {
+    display: block;
+    margin-top: -30px;
+}
+
+.intro {
+    padding: 0 20px;
+    gap: 24px; 
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 37px;
+}
+
+.intro__heading {
+    display: flex;
+    width: 320px;
+    color: var(--text-gray, #CCC);
+}
+
+.intro__heading_date {
+    margin: auto 0 auto auto;
+}
+
+.intro__main-text {
+    width: 320px;
+}
+
+.reasons {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 20px;
+    gap: 32px; 
+}
+
+.content-section__subtitle {
+    text-align: left;
+}
+
+.content-section__subtitle_right {
+    text-align: right;
+}
+
+.content-section__introduction {
+}
+
+ul {
+    display: block;
+  }
+  
+  li {
+    margin: 16px 20px 0px 0px; 
+    padding-left: 10px;
+  }
+
+.how-to {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 20px 60px 20px;
+    gap: 32px; 
+}
+
+.how-to-card {
+    border-radius: 30px;
+    padding: 20px;
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-dark {
+    background: var(--gray-bg, #343434);
+}
+
+.card-light {
+    background: var(--yellow-bg, #FEE42A);
+}
+
+.portrait-picture {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background: url(<path-to-image>), lightgray 0px -4.095px / 100% 118.534% no-repeat;
+}
+
+.footer {
+    border-top: 1px solid var(--yellow-bg, #FEE42A);
+    padding: 20px;
+    display: flex;
+}
+
+.footer-subblock {
+    display: flex;
+    gap: 16px;
+    margin: auto 0 auto auto;
+}
