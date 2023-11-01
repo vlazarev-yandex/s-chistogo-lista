@@ -19,6 +19,7 @@ blockquote {
 
 .border {
   border: 1px dashed gray;
+  /* Использую этот класс для выравнивания объектов, включая там, где нужно по необходимости */
 }
 
 .theme_dark {
@@ -34,6 +35,7 @@ blockquote {
 .main-content {
   width: 360px;
   height: 4160px;
+  /* Добавил из макетов, но, кажется, что в идеале не нужно фреймиться, чтобы макет адаптировался под разные девайсы */
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
@@ -41,14 +43,11 @@ blockquote {
 }
 
 .content-section {
-  width: 360px;
   box-sizing: border-box;
   padding: 0 20px;
 }
 
 .header {
-  width: 360px;
-  height: 132px;
   padding-top: 24px;
   padding-bottom: 24px;
 }
@@ -89,11 +88,13 @@ blockquote {
   background-image: url("../images/cover.svg");
   background-repeat: no-repeat;
   background-position: 20px;
+  /* Подбирал смещение вручкую */
 }
 
 .cover-title {
   display: block;
   margin-top: -30px;
+  /* Подбирал смещение вручкую */
 }
 
 .intro {
@@ -102,16 +103,12 @@ blockquote {
   display: flex;
   flex-direction: column;
   margin-bottom: 37px;
+  /* Подбирал попиксельно вручкую */
 }
 
 .intro__heading {
   display: flex;
-  width: 320px;
   color: var(--text-gray, #ccc);
-}
-
-.intro__heading_date {
-  margin: auto 0 auto auto;
 }
 
 .intro__main-text {
@@ -127,12 +124,14 @@ blockquote {
 
 .content-section__subtitle {
   text-align: left;
+  /* Кажется, что это избыточно, но почему-то без такого шага ломалось */
 }
 
 .content-section__subtitle_right {
   text-align: right;
 }
 
+  /* У списков какие-то свои приколы с отступами, поэтому я сбросил всё и настраивал вручкую, чтобы совпадало с макетами */
 ul {
   display: block;
 }
@@ -168,6 +167,7 @@ li {
 .portrait-picture {
   width: 100px;
   height: 100px;
+  /* Возможно, можно было сделать через сохранение оригинального размера картинки */
   border-radius: 50px;
   background: url(<path-to-image>),
     lightgray 0px -4.095px / 100% 118.534% no-repeat;
@@ -183,4 +183,5 @@ li {
   display: flex;
   gap: 16px;
   margin: auto 0 auto auto;
+  /* Сделано для выравнивания по правому краю */
 }
