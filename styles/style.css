@@ -170,7 +170,7 @@ li {
   background: var(--yellow-bg, #fee42a);
 }
 
-.portrait-picture {
+.square_100px {
   width: 100px;
   height: 100px;
   /* Возможно, можно было сделать через сохранение оригинального размера картинки */
