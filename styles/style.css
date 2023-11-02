@@ -75,9 +75,9 @@ blockquote {
 
 .header__menu-item-text {
   color: #f5f5f5;
-  font-family: "inter-regular";
+  font-family: 'Inter-regular';
+  font-style: normal;
   font-size: 16px;
-  font-weight: 400;
   line-height: 19.2px; /* 120% */
   border-bottom: #f5f5f5 solid 1px;
 }
