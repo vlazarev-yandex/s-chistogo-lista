@@ -1,6 +1,7 @@
 body {
-  margin: 0;
-  background-color: var(--black-bg, #131313);
+  margin: 0 auto;
+  background-color: #131313;
+  width: 360px;
 }
 
 h1,
@@ -16,27 +17,18 @@ blockquote {
   margin: 0;
   padding: 0;
 }
-
-.border {
-  border: 1px dashed gray;
-  /* Использую этот класс для выравнивания объектов, включая там, где нужно по необходимости */
-}
-
 .theme_dark {
-  background-color: var(--black-bg, #131313);
-  color: var(--text-light, #f5f5f5);
-  color: red;
+  background-color: #131313;
+  color: #f5f5f5;
 }
 
 .theme_bright {
-  background: var(--yellow-bg, #fee42a);
-  color: var(--black-bg, #131313);
-  color: red;
+  background: #fee42a;
+  color: #131313;
 }
 
 .main-content {
   width: 360px;
-  height: 4160px;
   /* Добавил из макетов, но, кажется, что в идеале не нужно фреймиться, чтобы макет адаптировался под разные девайсы */
   display: flex;
   flex-direction: column;
@@ -52,6 +44,7 @@ blockquote {
 .header {
   padding-top: 24px;
   padding-bottom: 24px;
+  margin-bottom: 80px;
 }
 
 .header__logo {
@@ -75,28 +68,49 @@ blockquote {
 }
 
 .header__menu-item {
-  text-decoration: underline;
   padding: 0;
   margin: 0;
+  width: fit-content;
+}
+
+.header__menu-item-text {
+  color: #f5f5f5;
+  font-family: "inter-regular";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.2px; /* 120% */
+  border-bottom: #f5f5f5 solid 1px;
 }
 
 .menu-active {
-  text-decoration: none;
+  border-bottom: none;
 }
 
 .cover {
-  margin: 40px 0 35px 0;
-  padding-left: 20px;
-  background-image: url("../images/cover.svg");
+  margin: 13px 0 3px 0;
+  padding: 0 24px 30px 20px;
+  background-image: url("../images/cover.png");
   background-repeat: no-repeat;
-  background-position: 20px;
-  /* Подбирал смещение вручкую */
+  background-position: 0% 115%;
+  background-origin: content-box;
+  background-clip: padding-box;
 }
 
-.cover-title {
+.cover-text-line {
   display: block;
-  margin-top: -30px;
-  /* Подбирал смещение вручкую */
+  font-family: "EB Garamond";
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.text-align-right {
+  text-align: right;
 }
 
 .intro {
@@ -110,41 +124,68 @@ blockquote {
 
 .intro__heading {
   display: flex;
-  color: red; 
-  /* color: var(--text-gray, #ccc); */
+}
+
+.intro__heading_title {
+  font-family: "inter-regular";
+  font-size: 16px;
+  font-weight: 00;
+  line-height: 120%; /* 19.2px */
+}
+
+.intro__heading_date {
+  font-family: "inter-regular";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 120%; /* 19.2px */
 }
 
 .intro__main-text {
-  width: 320px;
+  font-family: "inter-regular";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21.6px; /* 135% */
 }
 
 .reasons {
   display: flex;
   flex-direction: column;
-  padding: 40px 20px;
+  padding: 40px 20px 24px 20px;
   gap: 32px;
 }
 
 .content-section__subtitle {
-  text-align: left;
+  display: block;
+  font-family: "EB__Garamond-bold";
+  font-size: 28px;
+  line-height: 115%; /* 32.2px */
   /* Кажется, что это избыточно, но почему-то без такого шага ломалось */
 }
 
-.content-section__subtitle_right {
-  text-align: right;
+.content-section__introduction {
+  font-family: "inter-regular";
+  font-size: 20px;
+  line-height: 27px; /* 135% */
 }
 
-  /* У списков какие-то свои приколы с отступами, поэтому я сбросил всё и настраивал вручкую, чтобы совпадало с макетами */
-ul {
-  display: flex;
-  flex-direction: column;
+/* У списков какие-то свои приколы с отступами, поэтому я сбросил всё и настраивал вручкую, чтобы совпадало с макетами */
+.intro-ul {
   margin: 0;
-  gap: 16px;
 }
 
-li {
-  margin-left: 12px; 
-  padding-left: 8px;
+.intro-li {
+  margin-left: 12px;
+  padding-left: 5px;
+  font-family: "inter-regular";
+  font-size: 16px;
+  line-height: 21.6px;
+  margin-bottom: 16px;
+}
+
+.intro-li-bold-text {
+  font-family: "inter-bold";
+  font-size: 16px;
+  line-height: 21.6px; /* 135% */
 }
 
 .how-to {
@@ -155,39 +196,69 @@ li {
 }
 
 .how-to-card {
+  width: 319px;
   border-radius: 30px;
   padding: 20px;
   gap: 8px;
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
+}
+
+.how-to-card-name {
+  font-family: "inter-bold";
+  font-size: 16px;
+  line-height: 135%; /* 21.6px */
+}
+
+.how-to-card-title {
+  font-family: "EB__Garamond-bold";
+  font-size: 22px;
+  line-height: 135%; /* 29.7px */
+}
+
+.how-to-card-text {
+  font-family: "inter-regular";
+  font-size: 16px;
+  line-height: 21.6px; /* 135% */
 }
 
 .card-dark {
-  background: var(--gray-bg, #343434);
+  background: #343434;
 }
 
 .card-light {
-  background: var(--yellow-bg, #fee42a);
+  background: #fee42a;
 }
 
 .square_100px {
   width: 100px;
   height: 100px;
   /* Возможно, можно было сделать через сохранение оригинального размера картинки */
-  border-radius: 50px;
+  border-radius: 50%;
   background: url(<path-to-image>),
     lightgray 0px -4.095px / 100% 118.534% no-repeat;
 }
 
 .footer {
-  border-top: 1px solid var(--yellow-bg, #fee42a);
+  border-top: 1px solid #fee42a;
   padding: 20px;
   display: flex;
+  font-family: "inter-regular";
+  font-size: 16px;
+  line-height: 135%; /* 21.6px */
 }
 
 .footer-subblock {
   display: flex;
   gap: 16px;
   margin: auto 0 auto auto;
+  padding: 0;
   /* Сделано для выравнивания по правому краю */
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  font-family: "inter-regular";
+  font-size: 14px;
+  line-height: 125%; /* 17.5px */
 }
