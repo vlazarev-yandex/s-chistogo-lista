@@ -254,11 +254,14 @@ blockquote {
   gap: 16px;
   margin: auto 0 auto auto;
   padding: 0;
-  /* Сделано для выравнивания по правому краю */
-  display: flex;
   flex-direction: row;
   list-style: none;
   font-family: "inter-regular";
   font-size: 14px;
   line-height: 125%; /* 17.5px */
+}
+
+.footer-subblock a {
+  text-decoration: none;
+  color: inherit;
 }
