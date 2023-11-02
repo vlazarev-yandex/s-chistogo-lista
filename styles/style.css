@@ -75,8 +75,9 @@ blockquote {
 
 .header__menu-item-text {
   color: #f5f5f5;
-  font-family: 'Inter-regular';
+  font-family: "Inter";
   font-style: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 19.2px; /* 120% */
   border-bottom: #f5f5f5 solid 1px;
@@ -98,9 +99,10 @@ blockquote {
 
 .cover-text-line {
   display: block;
-  font-family: "EB__Garamond-regular";
+  font-family: "EB Garamond";
   font-size: 72px;
   font-style: normal;
+  font-weight: 400;
   font-weight: 400;
   line-height: 100%;
 }
@@ -124,26 +126,31 @@ blockquote {
 
 .intro__heading {
   display: flex;
+  color: #ccc;
 }
 
 .intro__heading_title {
-  font-family: "inter-regular";
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
   font-size: 16px;
   font-weight: 00;
   line-height: 120%; /* 19.2px */
 }
 
 .intro__heading_date {
-  font-family: "inter-regular";
+  font-family: "Inter";
   font-size: 16px;
+  font-style: normal;
   font-weight: 400;
   line-height: 120%; /* 19.2px */
 }
 
 .intro__main-text {
-  font-family: "inter-regular";
+  font-family: "Inter";
   font-size: 16px;
   font-weight: 400;
+  font-style: normal;
   line-height: 21.6px; /* 135% */
 }
 
@@ -156,15 +163,18 @@ blockquote {
 
 .content-section__subtitle {
   display: block;
-  font-family: "EB__Garamond-bold";
+  font-family: "EB Garamond";
   font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
   line-height: 115%; /* 32.2px */
-  /* Кажется, что это избыточно, но почему-то без такого шага ломалось */
 }
 
 .content-section__introduction {
-  font-family: "inter-regular";
+  font-family: "Inter";
   font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
   line-height: 27px; /* 135% */
 }
 
@@ -176,15 +186,19 @@ blockquote {
 .intro-li {
   margin-left: 12px;
   padding-left: 5px;
-  font-family: "inter-regular";
+  font-family: "Inter";
   font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
   line-height: 21.6px;
   margin-bottom: 16px;
 }
 
 .intro-li-bold-text {
-  font-family: "inter-bold";
+  font-family: "Inter";
   font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
   line-height: 21.6px; /* 135% */
 }
 
@@ -206,20 +220,26 @@ blockquote {
 }
 
 .how-to-card-name {
-  font-family: "inter-bold";
+  font-family: "Inter";
   font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
   line-height: 135%; /* 21.6px */
 }
 
 .how-to-card-title {
-  font-family: "EB__Garamond-bold";
+  font-family: "EB Garamond";
   font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
   line-height: 135%; /* 29.7px */
 }
 
 .how-to-card-text {
-  font-family: "inter-regular";
+  font-family: "Inter";
   font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
   line-height: 21.6px; /* 135% */
 }
 
@@ -244,8 +264,10 @@ blockquote {
   border-top: 1px solid #fee42a;
   padding: 20px;
   display: flex;
-  font-family: "inter-regular";
+  font-family: "Inter";
   font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
   line-height: 135%; /* 21.6px */
 }
 
@@ -256,8 +278,10 @@ blockquote {
   padding: 0;
   flex-direction: row;
   list-style: none;
-  font-family: "inter-regular";
+  font-family: "Inter";
   font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
   line-height: 125%; /* 17.5px */
 }
 
