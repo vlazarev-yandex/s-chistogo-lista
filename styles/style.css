@@ -43,15 +43,11 @@ blockquote {
   padding-top: 24px;
   padding-bottom: 24px;
   margin-bottom: 80px;
-}
-
-.header__logo {
-  float: left;
-  height: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .header__menu {
-  float: right;
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -259,6 +255,7 @@ blockquote {
   border-top: 1px solid #fee42a;
   padding: 20px;
   display: flex;
+  justify-content: space-between;
   font-family: "Inter";
   font-size: 16px;
   font-style: normal;
@@ -269,9 +266,6 @@ blockquote {
 .footer-subblock {
   display: flex;
   gap: 16px;
-  margin-left: auto;
-  padding: 0;
-  flex-direction: row;
   list-style: none;
   font-family: "Inter";
   font-size: 14px;
