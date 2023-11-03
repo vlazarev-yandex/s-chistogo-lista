@@ -269,7 +269,7 @@ blockquote {
 .footer-subblock {
   display: flex;
   gap: 16px;
-  margin-left: auto; 
+  margin-left: auto;
   padding: 0;
   flex-direction: row;
   list-style: none;
